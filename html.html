@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yoga Shibir Poster Editor</title>
+    <script src="https://cdn.jsdelivr.net/npm/sanscript@1.0.1/sanscript.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<h1>Yoga Shibir Poster Editor</h1>
+
+<div class="container">
+
+    <div class="editor">
+        <h3>Edit Details</h3>
+
+        <label>Yoga Shibir No</label>
+        <input type="text" id="shibirNo" value="172">
+
+        <label>Sthan</label>
+        <input type="text" id="sthan" value="Hanuman Mandir, Uday Nagar">
+
+        <label>Dinank</label>
+        <input type="text" id="dinank" value="8 January 2026 te 14 January 2026">
+
+        <label>Samay</label>
+        <input type="text" id="samay" value="6 sakali te 7 sakali">
+
+        <label>Soujanya</label>
+        <input type="text" id="soujanya" value="Shriman Raju Shriram">
+
+        <br><br>
+        <button id="downloadBtn">Download PDF</button>
+    </div>
+
+    <div class="poster">
+        <img src="yogashibir.jpeg">
+
+        <div class="text star" id="starText"></div>
+        <div class="text sthan" id="sthanText"></div>
+        <div class="text dinank" id="dinankText"></div>
+        <div class="text samay" id="samayText"></div>
+        <div class="text soujanya" id="soujanyaText"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

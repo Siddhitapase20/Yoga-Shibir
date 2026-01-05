@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.editor {
+    background: white;
+    padding: 15px;
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.editor h3 {
+    margin-bottom: 10px;
+}
+
+.editor label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.editor input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+.poster {
+    position: relative;
+    width: 800px;
+}
+
+.poster img {
+    width: 100%;
+    display: block;
+}
+
+.text {
+    position: absolute;
+    font-weight: bold;
+    color: purple;
+    pointer-events: none;
+}
+
+.star {
+    top: 162px;
+    left: 204px;
+    font-size: 27px;
+    color: rgb(197, 68, 20);
+    background-color: yellow;
+    padding: 2px 2px;
+}
+
+.sthan {
+    top: 476px;
+    left: 186px;
+    font-size: 18px;
+    background-color: WHITE;
+    padding: 4px 10px;
+}
+
+.dinank {
+    top: 510px;
+    left: 186px;
+    font-size: 18px;
+    background-color: WHITE;
+    padding: 4px 7px;
+}
+
+.samay {
+    top: 540px;
+    left: 186px;
+    font-size: 18px;
+    background-color: WHITE;
+    padding: 4px 7px;
+}
+
+.soujanya {
+    top: 600px;
+    left: 186px;
+    font-size: 18px;
+    background-color: WHITE;
+    padding: 4px 7px;
+    color:rgb(29, 141, 163);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .editor {
+        width: 90%;
+    }
+
+    .poster {
+        width: 100%;
+    }
+}
+.downloadBtn{
+    background-color: rgb(93, 201, 38);
+}
