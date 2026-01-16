@@ -51,51 +51,83 @@ h1 {
 .text {
     position: absolute;
     font-weight: bold;
-    color: purple;
+    color: #6F42A6;
     pointer-events: none;
 }
 
 .star {
-    top: 162px;
-    left: 204px;
-    font-size: 27px;
+    top: 128px;
+    left: 162px;
+    font-size: 21px;
     color: rgb(197, 68, 20);
     background-color: yellow;
-    padding: 2px 2px;
+    padding: 1px 1px;
 }
 
 .sthan {
-    top: 476px;
-    left: 186px;
+    top: 375px;
+    left: 140px;
     font-size: 18px;
     background-color: WHITE;
-    padding: 4px 10px;
+    padding: 2px 2px;
+}
+.start-date {
+    position: absolute;
+    top: 400px;
+    left: 143px;
+    font-size: 18px;
+    background-color: WHITE;
+    padding: 2px 3px;
+}
+.end-date {
+    position: absolute;
+    top: 400px;
+    left: 263px;   /* right side of start date */
+    font-size: 18px;
+    background-color: WHITE;
+    padding: 2px 3px;
+}
+.start-time {
+    position: absolute;
+    top: 425px;
+    left: 198px;
+    font-size: 18px;
+    background-color: WHITE;
+    padding: 1px 1px;
 }
 
-.dinank {
-    top: 510px;
-    left: 186px;
+.end-time {
+    position: absolute;
+    top: 425px;
+    left: 262px;  
     font-size: 18px;
     background-color: WHITE;
-    padding: 4px 7px;
+    padding: 1px 1px;
 }
-
-.samay {
-    top: 540px;
-    left: 186px;
-    font-size: 18px;
+.soujanya1 {
+    top: 473px;
+    left: 150px;
+    font-size: 17px;
     background-color: WHITE;
-    padding: 4px 7px;
+    padding: 2px 8px;
+    color: #1E73B9;
 }
-
-.soujanya {
-    top: 600px;
-    left: 186px;
-    font-size: 18px;
+.soujanya2 {
+    top: 493px;
+    left: 150px;
+    font-size: 17px;
     background-color: WHITE;
-    padding: 4px 7px;
-    color:rgb(29, 141, 163);
+    padding: 2px 8px;
+    color: #1E73B9;
 }
+.soujanya3 {
+    top: 514px;
+    left: 150px;
+    font-size: 17px;
+    background-color: WHITE;
+    padding: 2px 8px;
+    color: #1E73B9;
+}   
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -103,13 +135,17 @@ h1 {
     }
 
     .editor {
-        width: 90%;
+        width: 95%;
     }
 
     .poster {
-        width: 100%;
+        transform: scale(0.45);
+        transform-origin: top center;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 }
+
 .downloadBtn{
     background-color: rgb(93, 201, 38);
 }

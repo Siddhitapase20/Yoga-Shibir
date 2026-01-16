@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Yoga Shibir Poster Editor</title>
-    <script src="https://cdn.jsdelivr.net/npm/sanscript@1.0.1/sanscript.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,30 +24,53 @@
         <label>Sthan</label>
         <input type="text" id="sthan" value="Hanuman Mandir, Uday Nagar">
 
-        <label>Dinank</label>
-        <input type="text" id="dinank" value="8 January 2026 te 14 January 2026">
+        <label>Start Date</label>
+        <input type="text" id="Start-Date" >
+        <label>End Date</label>
+        <input type="text" id="End-Date" >
 
-        <label>Samay</label>
-        <input type="text" id="samay" value="6 sakali te 7 sakali">
+        <label> Start Time</label>
+        <input type="text" id="Start-Time">
+        <label> End Time</label>
+        <input type="text" id="End-Time">
 
-        <label>Soujanya</label>
-        <input type="text" id="soujanya" value="Shriman Raju Shriram">
+
+
+        <label>Soujanya1</label>
+        <input type="text" id="soujanya1">
+        <label>Soujanya2</label>
+        <input type="text" id="soujanya2"> 
+        <label>Soujanya3</label>
+        <input type="text" id="soujanya3"> 
+
+        
 
         <br><br>
         <button id="downloadBtn">Download PDF</button>
     </div>
 
     <div class="poster">
-        <img src="yogashibir.jpeg">
+    <img src="yogashibir (1).jpeg">
 
-        <div class="text star" id="starText"></div>
-        <div class="text sthan" id="sthanText"></div>
-        <div class="text dinank" id="dinankText"></div>
-        <div class="text samay" id="samayText"></div>
-        <div class="text soujanya" id="soujanyaText"></div>
-    </div>
+    <div class="text star" id="starText"></div>
+    <div class="text sthan" id="sthanText"></div>
+
+    <div class="text start-date" id="startDateText"></div> 
+    <div class="text end-date" id="endDateText"></div>
+
+    <div class="text start-time" id="startTimeText"></div>
+    <div class="text end-time" id="endTimeText"></div>
+
+    <div class="text soujanya1" id="soujanya1Text">1)</div>
+    <div class="text soujanya2" id="soujanya2Text">2)</div>
+    <div class="text soujanya3" id="soujanya3Text">3)</div>
+
 </div>
 
+</div>
+<script src="converter.js"></script>
 <script src="script.js"></script>
+
+
 </body>
 </html>
