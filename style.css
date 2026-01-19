@@ -3,17 +3,14 @@ body {
     background-color: #f4f4f4;
     margin: 20px;
 }
-
 h1 {
     text-align: center;
 }
-
 .container {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
-
 .editor {
     background: white;
     padding: 15px;
@@ -21,40 +18,33 @@ h1 {
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 .editor h3 {
     margin-bottom: 10px;
 }
-
 .editor label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
 }
-
 .editor input {
     width: 100%;
     padding: 6px;
     margin-top: 5px;
 }
-
 .poster {
     position: relative;
     width: 800px;
 }
-
 .poster img {
     width: 100%;
     display: block;
 }
-
 .text {
     position: absolute;
     font-weight: bold;
     color: #6F42A6;
     pointer-events: none;
 }
-
 .star {
     top: 128px;
     left: 162px;
@@ -63,8 +53,19 @@ h1 {
     background-color: yellow;
     padding: 1px 1px;
 }
+.title{
+    position: absolute;
+    top: 247px;      
+    left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #B22222;  
+    background-color: white;
+    padding: 6px 120px;
+    z-index: 10;
+}
 
-.sthan {
+.venue {
     top: 375px;
     left: 140px;
     font-size: 18px;
@@ -82,50 +83,49 @@ h1 {
 .end-date {
     position: absolute;
     top: 400px;
-    left: 263px;   /* right side of start date */
+    left: 263px;   
     font-size: 18px;
     background-color: WHITE;
     padding: 2px 3px;
 }
 .start-time {
     position: absolute;
-    top: 425px;
+    top: 426px;
     left: 198px;
     font-size: 18px;
     background-color: WHITE;
     padding: 1px 1px;
 }
-
 .end-time {
     position: absolute;
-    top: 425px;
+    top: 426px;
     left: 262px;  
     font-size: 18px;
     background-color: WHITE;
     padding: 1px 1px;
 }
 .soujanya1 {
-    top: 473px;
+    top: 475px;
     left: 150px;
-    font-size: 17px;
+    font-size: 16px;
     background-color: WHITE;
-    padding: 2px 8px;
+    padding: 2px 7px;
     color: #1E73B9;
 }
 .soujanya2 {
-    top: 493px;
+    top: 494px;
     left: 150px;
-    font-size: 17px;
+    font-size: 16px;
     background-color: WHITE;
-    padding: 2px 8px;
+    padding: 2px 7px;
     color: #1E73B9;
 }
 .soujanya3 {
-    top: 514px;
+    top: 515px;
     left: 150px;
-    font-size: 17px;
+    font-size: 16px;
     background-color: WHITE;
-    padding: 2px 8px;
+    padding: 2px 7px;
     color: #1E73B9;
 }   
 @media (max-width: 768px) {
@@ -145,7 +145,6 @@ h1 {
         margin-bottom: 40px;
     }
 }
-
 .downloadBtn{
     background-color: rgb(93, 201, 38);
 }

@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const shibirNo = document.getElementById("shibirNo");
-    const sthan = document.getElementById("sthan");
+    const title = document.getElementById("tittle");
+    const venue = document.getElementById("venue");
     const startDate = document.getElementById("Start-Date");
     const endDate = document.getElementById("End-Date");
     const startTime = document.getElementById("Start-Time");
@@ -13,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const starText = document.getElementById("starText");
-    const sthanText = document.getElementById("sthanText");
+    const titleText = document.getElementById("titleText");
+    const venueText = document.getElementById("venueText");
     const startDateText = document.getElementById("startDateText");
     const endDateText = document.getElementById("endDateText");
     const startTimeText = document.getElementById("startTimeText");
@@ -24,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const soujanya3Text = document.getElementById("soujanya3Text");
 
 
-    // Transliterate using Google Input Tools API
     async function transliterateChunk(text, lang = "hi-t-i0-und") {
         const params = new URLSearchParams();
         params.append("text", text);
@@ -47,11 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (result[0] === "SUCCESS") {
             return result[1][0][1][0];
         }
-        return text; // fallback
+        return text;
     }
 
     async function transliterateFullText(text) {
-        // Split by comma, transliterate each part
         const parts = text.split(",");
         const translatedParts = [];
         for (const part of parts) {
@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function updatePoster() {
     starText.textContent = shibirNo.value;
-
-    sthanText.textContent = await transliterateFullText(sthan.value);
+    titleText.textContent = await transliterateFullText(title.value);
+    venueText.textContent = await transliterateFullText(venue.value);
 
     startDateText.textContent = await transliterateFullText(startDate.value);
     endDateText.textContent = await transliterateFullText(endDate.value);
@@ -93,7 +93,8 @@ function delayedUpdate() {
 }
 
 shibirNo.addEventListener("input", delayedUpdate);
-sthan.addEventListener("input", delayedUpdate);
+title.addEventListener("input", delayedUpdate);
+venue.addEventListener("input", delayedUpdate);
 startDate.addEventListener("input", delayedUpdate);
 endDate.addEventListener("input", delayedUpdate);
 startTime.addEventListener("input", delayedUpdate);
@@ -101,7 +102,6 @@ endTime.addEventListener("input", delayedUpdate);
 soujanya1.addEventListener("input", delayedUpdate);
 soujanya2.addEventListener("input", delayedUpdate);
 soujanya3.addEventListener("input", delayedUpdate);
-
 
     updatePoster();
 });
